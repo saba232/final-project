@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>News List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">News List</h1>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Editor First Name</th>
+            <th>Editor Last Name</th>
+            <th>
+              <button
+                class="create-btn"
+                onclick="window.location.href='create.html';"
+              >
+                Create
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody id="news-table-body">
+          <!-- JavaScript will populate this -->
+        </tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

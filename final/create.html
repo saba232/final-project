@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create News</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Create News</h1>
+      <form id="create-news-form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" required />
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="category">Category</label>
+          <input type="text" id="category" name="category" required />
+        </div>
+
+        <div class="form-group-inline">
+          <div>
+            <label for="editorFirstName">Editor First Name</label>
+            <input
+              type="text"
+              id="editorFirstName"
+              name="editorFirstName"
+              required
+            />
+          </div>
+          <div>
+            <label for="editorLastName">Editor Last Name</label>
+            <input
+              type="text"
+              id="editorLastName"
+              name="editorLastName"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button
+            type="button"
+            class="cancel-btn"
+            onclick="window.location.href='index.html';"
+          >
+            Cancel
+          </button>
+          <button type="submit" class="save-btn">Save</button>
+        </div>
+      </form>
+    </div>
+    <script src="create.js"></script>
+  </body>
+</html>
